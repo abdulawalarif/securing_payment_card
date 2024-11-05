@@ -1,16 +1,18 @@
 
 # Securing Payment App
 
-## This Flutter app provides a simple interface for displaying and toggling between two views: one for a secured card and another for an open card. 
+## This Flutter and Dart project app provides a simple interface for displaying and toggling between two views: one for a secured card and another for an exposed card. 
 
-## The app also demonstrates the use of Flutter Hooks for lifecycle awareness with opacity.
+## The app also demonstrates the use of Flutter Hooks for lifecycle management with opacity.
 
 
 
 ## Features
+
 * **Two Card Views:** The app has two tabs in the TabBar, one for a secured card and another for an open card.
-* **Lifecycle-Aware UI:** The secured card tab listens to app lifecycle changes to control the card's visibility.
-* **Simple UI with Shadow Effects:** Both views display an image with shadow effects for a visually appealing UI.
+
+* **Lifecycle-Aware UI:** The secured card tab listens to app lifecycle changes to control the card's visibility and another tap dosent.
+
 
 
 ## File stracture
@@ -18,13 +20,13 @@
     
     ├── lib
     │   ├── main.dart          # main and tab view
-    │   ├── card_open.dart     # secured card with lifecycle awareness  
-    │   ├── card_secured.dart   # Widget to display open card               
+    │   ├── card_open.dart     # secured card 
+    │   ├── card_secured.dart   # open card               
      
  
 
  
- <img src="demo/bloc.gif" width="50%" alt="Demo of this application" />
+ <img src="demo/securing_payment.gif" width="20%" alt="Demo of this application" />
 
 
  
