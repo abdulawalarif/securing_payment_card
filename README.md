@@ -1,20 +1,25 @@
 
-# Network Request with Bloc
+# Securing Payment App
 
-## This Flutter and Dart project demonstrates how to send network requests using the Bloc library. Here I fetched data from two different API endpoints and displays is on a list, This stracture also optimized performance through caching to prevent double network call.
+## This Flutter app provides a simple interface for displaying and toggling between two views: one for a secured card and another for an open card. 
 
-**The project provides a solid foundation for developers looking to implement network-based features in their applications using Flutter’s Bloc architecture. It includes features like data loading from multiple sources, caching of responses, and efficient UI updates when data changes.**
+## The app also demonstrates the use of Flutter Hooks for lifecycle awareness with opacity.
 
 
 
 ## Features
-* **Hiding payment card:** When user tap and ...
+* **Two Card Views:** The app has two tabs in the TabBar, one for a secured card and another for an open card.
+* **Lifecycle-Aware UI:** The secured card tab listens to app lifecycle changes to control the card's visibility.
+* **Simple UI with Shadow Effects:** Both views display an image with shadow effects for a visually appealing UI.
+
 
 ## File stracture
 
     
     ├── lib
-    │   ├── main.dart                  
+    │   ├── main.dart          # main and tab view
+    │   ├── card_open.dart     # secured card with lifecycle awareness  
+    │   ├── card_secured.dart   # Widget to display open card               
      
  
 
@@ -53,7 +58,8 @@ Connect a physical device or start a virtual device on your machine
 
 
 ## How to tweak this project for your own uses
-
+* Instead of asset image reaplace the imace Widget with network image from your provided vendor of payment.   
+* **Expand Lifecycle Features:** Add more lifecycle-aware elements if you need to react to app pause or background states in different ways.
 
 ## Reporting Bugs or Requesting Features?
 
@@ -70,7 +76,14 @@ please submit an issue using the issues tab above. If you would like to submit a
   
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+- This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file for more details.
+
+
+
+
 
 
 
